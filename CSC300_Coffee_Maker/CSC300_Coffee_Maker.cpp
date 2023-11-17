@@ -17,6 +17,22 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    User user1;
+    string sz;
+    string str;
+
+    user1.selectCupSize();
+    cin >> sz;
+    user1.setCupSize(sz);
+    cout << endl;
+
+    user1.selectBrewStrength();
+    cin >> str;
+    user1.setBrewStrength(str);
+    cout << endl;
+
+    user1.printSelectedOptions();
+
+    return 0;
 }
 
