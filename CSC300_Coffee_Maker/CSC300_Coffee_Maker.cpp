@@ -17,6 +17,23 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    User user1;
+    GUI session;
+    string sz;
+    string str;
+
+    session.printSizeOptions();
+    cin >> sz;
+    user1.setCupSize(sz);
+    cout << endl;
+
+    session.printBrewOptions();
+    cin >> str;
+    user1.setBrewStrength(str);
+    cout << endl;
+
+    session.printSelectedOptions(user1);
+
+    return 0;
 }
 
