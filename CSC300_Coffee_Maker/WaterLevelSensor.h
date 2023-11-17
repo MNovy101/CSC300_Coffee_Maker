@@ -1,10 +1,11 @@
 #pragma once
 #include <iostream>
 #include "Maintenance.h"
+#include "User.h"
 
 using namespace std;
 
-class WaterLevelSensor: public Maintenance {
+class WaterLevelSensor {
 protected:
 	int waterlevel = 40;
 public:
