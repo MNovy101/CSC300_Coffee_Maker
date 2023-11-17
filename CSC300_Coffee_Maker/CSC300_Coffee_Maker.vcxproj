@@ -129,6 +129,15 @@
   <ItemGroup>
     <ClCompile Include="CSC300_Coffee_Maker.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="FilterStatusSensor.h" />
+    <ClInclude Include="GroundsSensor.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="Maintenance.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="WaterLevelSensor.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
