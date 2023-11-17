@@ -18,20 +18,21 @@ using namespace std;
 int main()
 {
     User user1;
+    GUI session;
     string sz;
     string str;
 
-    user1.selectCupSize();
+    session.printSizeOptions();
     cin >> sz;
     user1.setCupSize(sz);
     cout << endl;
 
-    user1.selectBrewStrength();
+    session.printBrewOptions();
     cin >> str;
     user1.setBrewStrength(str);
     cout << endl;
 
-    user1.printSelectedOptions();
+    session.printSelectedOptions(user1);
 
     return 0;
 }

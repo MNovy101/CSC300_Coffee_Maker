@@ -6,7 +6,7 @@
 using namespace std;
 
 class User {
-private:
+protected:
 	string size = "Medium";  //Defaulting to Medium
 	string strength = "Regular";  //Defaulting to Regular
 public:
@@ -16,9 +16,6 @@ public:
 	string getCupSize();
 	void setBrewStrength(string str);
 	string getBrewStrength();
-	void selectCupSize();
-	void selectBrewStrength();
-	void printSelectedOptions();
 };
 User::User() {
 	this->size = size;
@@ -40,16 +37,3 @@ void User::setBrewStrength(string str) {
 string User::getBrewStrength() {
 	return strength;
 };
-void User::selectCupSize() {
-	cout << "Select the desired cup size" << endl;
-	cout << "Options: Large, Medium, Small" << endl << endl;
-};
-void User::selectBrewStrength() {
-	cout << "Select the desired coffee strength" << endl;
-	cout << "Options: Regular, Bold" << endl << endl;
-};
-void User::printSelectedOptions() {
-	cout << "You have made the following selections:" << endl;
-	cout << "Cup Size: " << getCupSize() << endl;
-	cout << "Brew Strength: " << getBrewStrength() << endl << endl;
-}
