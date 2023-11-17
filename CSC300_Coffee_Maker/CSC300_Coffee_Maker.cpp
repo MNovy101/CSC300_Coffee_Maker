@@ -17,22 +17,35 @@ using namespace std;
 
 int main()
 {
-    User user1;
+    Controller user1;
     GUI session;
-    string sz;
-    string str;
+    string userEnteredsize;
+    string userEnteredStrength;
+
+    user1.setPowerMode(true);
+    user1.setEcoMode(true);
+
+    if (user1.getEcoMode() == true)
+        cout << "Eco Mode is now active" << endl << endl;
+    else
+        cout << "Ecomode is Off" << endl << endl;
 
     session.printSizeOptions();
-    cin >> sz;
-    user1.setCupSize(sz);
+    cin >> userEnteredsize;
+    user1.setCupSize(userEnteredsize);
     cout << endl;
 
     session.printBrewOptions();
-    cin >> str;
-    user1.setBrewStrength(str);
+    cin >> userEnteredStrength;
+    user1.setBrewStrength(userEnteredStrength);
     cout << endl;
 
     session.printSelectedOptions(user1);
+
+    session.heatWater();
+    session.dispenseCoffee();
+
+    session.printBrewingComplete();
 
     return 0;
 }

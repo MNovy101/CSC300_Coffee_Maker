@@ -26,13 +26,13 @@ User::User(string sz, bool str) {
 	this->strength = str;
 };
 void User::setCupSize(string sz) {
-	this->size = sz;
+	size = sz;
 };
 string User::getCupSize() {
 	return size;
 };
 void User::setBrewStrength(string str) {
-	this->strength = str;
+	strength = str;
 };
 string User::getBrewStrength() {
 	return strength;
